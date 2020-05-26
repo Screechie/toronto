@@ -94,6 +94,10 @@ footer{
   width: 1100px;
 }
 
+a, a:visited {
+  color: black;
+}
+
 /* Responsive media queries */
 @media screen and (max-width: 1100px){
   .gallery{
