@@ -1,6 +1,6 @@
 html, body{
   background-color: #d5d5d5;
-  height: 100%;
+  height: auto;
   margin:0;
   padding:0;
   width: 100%;
@@ -99,11 +99,54 @@ a, a:visited {
 }
 
 /* Responsive media queries */
-@media screen and (max-width: 1100px){
+@media screen and (max-width: 1150px){
+
+  body, html {
+    overflow-x: hidden;
+  }
+
   .gallery{
     columns: 300px 2;
     column-gap: 15px;
     margin-bottom: 2%;
     width: 100%;
+  }
+
+  .gallery-item:nth-child(even){
+    margin-bottom: 15px;
+  }
+
+  #wrapper {
+    margin: 0 auto;
+    padding: 2%;
+    width: 80%;
+  }
+
+  footer{
+    padding-left: 10%;
+  }
+}
+
+@media screen and (max-width: 450px){
+
+  body, html {
+    overflow-x: hidden;
+  }
+  
+  .gallery{
+    columns: 300px 1;
+    column-gap: 15px;
+    margin-bottom: 2%;
+    width: 100%;
+  }
+
+  #wrapper {
+    margin: 0 auto;
+    padding: 2%;
+    width: 100%;
+  }
+
+  footer{
+    padding-left: 2%;
   }
 }
